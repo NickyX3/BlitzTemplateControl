@@ -4,7 +4,7 @@
 	 * Required Blitz extension (https://github.com/alexeyrybak/blitz)
 	 * Required phpredis extension (https://github.com/phpredis/phpredis) if use cached mode
 	 * 
-	 * version 0.5
+	 * version 0.6
 	 * Use for store templates in one file with php array or original separate files in folder.
 	 * 
 	 * @author Nic Latyshev
