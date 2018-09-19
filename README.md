@@ -57,6 +57,6 @@ echo $tmplcontrol_in_tpl_files->apply('authors',$data);
 ?>
 ```
 ## Redis Cache
-Also you can cache templates in Redis, there will be fully expanded templates, in which all inclusions are replaced by this content. Templates are stored in the HSET with a key name  'Template:'.SomeSetName.':'.md5(FILENAME|TEMPLATENAME).
+Also you can cache templates in Redis, there will be fully expanded templates, in which all inclusions are replaced by this content. Templates are stored in the HSET with a key name  'Template:'.SomeSetName.':'.md5(FILENAME).
 
 In this mode, every time the templates are loaded, the date of modification of the files or file is checked, if any templates in the file are fresh than the data in the Redis, then the cache is updated with new TTL. If the templates in the files have not changed, then only the update key TTL
